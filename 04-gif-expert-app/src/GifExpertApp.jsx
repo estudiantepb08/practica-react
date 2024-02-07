@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { useState } from "react";
-import { AddCategories, GitGrid } from './components';
+import { AddCategories, GifGrid } from './components';
 
 export const GifExpertApp = ()=>{
 
@@ -35,7 +35,7 @@ export const GifExpertApp = ()=>{
        /** Segunda forma de listar o recorrer la lista desestructurando con un componente */
 
        categories.map(category =>(
-        <GitGrid key={category} category={category}></GitGrid> //Componente GifGrid categori para desacoplar el codigo
+        <GifGrid key={category} category={category}></GifGrid> //Componente GifGrid categori para desacoplar el codigo
        ))
         }
         

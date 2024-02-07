@@ -6,11 +6,11 @@
  * 1. Nos paramos en la carpeta dist de compilacion 
  * 2. Dentro de la carpeta ejecutamos el comando 'http-server -o'
  */
-
+import { PropTypes } from "prop-types";
 import { GifItem } from "./GifItem";
 import { useFetchGifs } from "../hooks/useFetchGifs";
 
-export const GitGrid = ({category})=>{  
+export const GifGrid = ({category})=>{  
 
     /* Custom Hook personalizado lo estamos inicializando con categori*/
 
@@ -27,16 +27,21 @@ export const GitGrid = ({category})=>{
         images.map(({id, title}) =>(
             <li key={id}>{title}</li>
         ))
-        */
+     */   
        /** Otra forma de hacerlo mas optimizado 
         * una tecnica de esparcir las propiedades es con obtener el objeto completo y con el express podemos desestructurar todas sus propiedades
         * ejemplo: {...image} el componente GifItem puede utilizar las propiedades
-       */
+      */
 
        images.map((image)=>(
         <GifItem key={image.id} { ...image }></GifItem>
-       ))
+       ))  
+      // <GifItem title='Titulo P'></GifItem>
         }        
     </div>
     </>);
+}
+
+GifGrid.propTypes={
+    category: PropTypes.string.isRequired,
 }
