@@ -9,15 +9,33 @@ export const useFecth = (url) => {
         error: null,
     });
 
+    const localCache ={};
+
 // se actuliza cuando se vuelve a llamar la url
-   /* setState({
-        ...state,
+const setLoadingState = () => {
+    setState({
+        data: null,
         isLoading: true,
+        hasError: false,
+        error: null,
     });
-*/
-     
-    const getFetch = async()=>{        
+}; 
+
+    const getFetch = async() => {      
         
+        if(localCache[url]){
+            console.log('Usando cache');
+            setState({
+                data: localCache[url],
+                isLoading: false,
+                hasError: false,
+                error: null
+            });
+            return;
+        };
+        
+        setLoadingState();
+
         const resp = await fetch(url);
 
         // sleep dormir la peticion por un segundo 1/2
@@ -43,7 +61,10 @@ export const useFecth = (url) => {
             hasError: false,
             error: null,
         });
-        }
+
+        // Manejo del cache
+        localCache[url] = data;
+        };
 
     useEffect(()=>{
         getFetch();

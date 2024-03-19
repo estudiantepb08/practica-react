@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useFecth } from '../hooks/useFecth';
 import { useCounter } from '../hooks/useCounter';
 import { LoadingMessage } from './LoadingMessage';
+import { PokemonCard } from './PokemonCard';
 
 export const MultiplesCustomHooks = () => {
 //https://www.breakingbadapi.com/api/qoutes/1
@@ -19,7 +20,10 @@ export const MultiplesCustomHooks = () => {
   return (<>
   <h1>Información de Pokémon</h1>
   <hr/>
-  { isLoading && <LoadingMessage></LoadingMessage>}
+  
+  { isLoading ? <LoadingMessage></LoadingMessage> : <PokemonCard id={data?.id} name={data?.name} sprites={[data?.sprites.front_default, data?.sprites.front_shiny, 
+                                                                                                           data?.sprites.back_default, data?.sprites.back_shiny]}></PokemonCard>}
+
   <h2>{data?.name}</h2>
   <button onClick={()=> counter > 1 ? decrement(): null } className='btn btn-primary mt-2'>Anterior</button>
   <button onClick={()=>increment()} className='btn btn-primary mt-2'>Siguiente</button>
