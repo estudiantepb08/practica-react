@@ -1,0 +1,160 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`FirstStepsApp > should match snapshot 1`] = `
+{
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <h2>
+        Hello World!
+      </h2>
+      <p>
+        My first React app.
+      </p>
+      <button>
+        Click me
+      </button>
+      <div>
+        <h2>
+          Hola dentro de un div 
+        </h2>
+      </div>
+      <hr />
+      <h1>
+        Carrito de Compras
+      </h1>
+      <div
+        data-testid="ItemCounter"
+      />
+      <div
+        data-testid="ItemCounter"
+      />
+      <div
+        data-testid="ItemCounter"
+      />
+      <hr />
+      <h1>
+        Demetrio
+      </h1>
+      <h2>
+        Sinisterra
+      </h2>
+      <p>
+        Elden Ring, Smash Bros, Metal Gear
+      </p>
+      <p>
+        6
+      </p>
+      <p>
+        Activo
+      </p>
+      <h3
+        style="background-color: rgb(240, 240, 240); border-radius: 10px; padding: 10px;"
+      >
+        {"zipCode":"ABC-123","country":"Colombia"}
+      </h3>
+    </div>
+  </body>,
+  "container": <div>
+    <h2>
+      Hello World!
+    </h2>
+    <p>
+      My first React app.
+    </p>
+    <button>
+      Click me
+    </button>
+    <div>
+      <h2>
+        Hola dentro de un div 
+      </h2>
+    </div>
+    <hr />
+    <h1>
+      Carrito de Compras
+    </h1>
+    <div
+      data-testid="ItemCounter"
+    />
+    <div
+      data-testid="ItemCounter"
+    />
+    <div
+      data-testid="ItemCounter"
+    />
+    <hr />
+    <h1>
+      Demetrio
+    </h1>
+    <h2>
+      Sinisterra
+    </h2>
+    <p>
+      Elden Ring, Smash Bros, Metal Gear
+    </p>
+    <p>
+      6
+    </p>
+    <p>
+      Activo
+    </p>
+    <h3
+      style="background-color: rgb(240, 240, 240); border-radius: 10px; padding: 10px;"
+    >
+      {"zipCode":"ABC-123","country":"Colombia"}
+    </h3>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
